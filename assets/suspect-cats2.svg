@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Mugshot background -->
+  <rect width="240" height="240" fill="#151A24"/>
+  <line x1="0" y1="40" x2="240" y2="40" stroke="#253245" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <line x1="0" y1="70" x2="240" y2="70" stroke="#253245" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <line x1="0" y1="100" x2="240" y2="100" stroke="#253245" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <line x1="0" y1="130" x2="240" y2="130" stroke="#253245" stroke-width="1.5" stroke-dasharray="4 4"/>
+
+  <!-- Left Cat (Pepper - Black/Tuxedo) -->
+  <g transform="translate(-25, 10)">
+    <polygon points="80,95 65,45 100,75" fill="#1A1C24"/>
+    <polygon points="135,95 150,45 115,75" fill="#1A1C24"/>
+    <circle cx="108" cy="115" r="36" fill="#1F232D"/>
+    <!-- Yellow crazed zoomie eyes -->
+    <circle cx="95" cy="110" r="8" fill="#FDD835"/>
+    <circle cx="122" cy="110" r="8" fill="#FDD835"/>
+    <circle cx="95" cy="110" r="3" fill="#111111"/>
+    <circle cx="122" cy="110" r="3" fill="#111111"/>
+  </g>
+
+  <!-- Right Cat (Cleo - Orange Tabby with chaotic energy) -->
+  <g transform="translate(45, 0)">
+    <polygon points="80,95 65,45 100,75" fill="#E65100"/>
+    <polygon points="135,95 150,45 115,75" fill="#E65100"/>
+    <circle cx="108" cy="115" r="36" fill="#FB8C00"/>
+    <!-- Stripes -->
+    <path d="M108 85 L108 98 M96 88 L100 98 M120 88 L116 98" stroke="#D84315" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Green crazed eyes -->
+    <circle cx="95" cy="110" r="8" fill="#7CB342"/>
+    <circle cx="122" cy="110" r="8" fill="#7CB342"/>
+    <circle cx="95" cy="110" r="3" fill="#111111"/>
+    <circle cx="122" cy="110" r="3" fill="#111111"/>
+  </g>
+
+  <!-- Motion Zoomie streaks -->
+  <line x1="20" y1="165" x2="65" y2="165" stroke="#D4AF37" stroke-width="2" stroke-dasharray="6 4" opacity="0.7"/>
+  <line x1="175" y1="155" x2="225" y2="155" stroke="#D4AF37" stroke-width="2" stroke-dasharray="6 4" opacity="0.7"/>
+
+  <!-- Joint Arrest Placard -->
+  <rect x="30" y="195" width="180" height="40" rx="4" fill="#0C0F17" stroke="#D4AF37" stroke-width="1.5"/>
+  <text x="120" y="212" fill="#F8F6F0" font-size="10" font-family="'JetBrains Mono', monospace" font-weight="bold" text-anchor="middle">PETTY PD #0342</text>
+  <text x="120" y="226" fill="#D4AF37" font-size="9" font-family="sans-serif" text-anchor="middle">CLEO &amp; PEPPER (ZOOMIES)</text>
+</svg>
+

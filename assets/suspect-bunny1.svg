@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Mugshot background -->
+  <rect width="240" height="240" fill="#1B171F"/>
+  <line x1="0" y1="40" x2="240" y2="40" stroke="#332A3B" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <line x1="0" y1="70" x2="240" y2="70" stroke="#332A3B" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <line x1="0" y1="100" x2="240" y2="100" stroke="#332A3B" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <line x1="0" y1="130" x2="240" y2="130" stroke="#332A3B" stroke-width="1.5" stroke-dasharray="4 4"/>
+
+  <!-- Lop Ears (Hanging down) -->
+  <path d="M75 100 Q40 130 50 180 Q68 185 80 135 Z" fill="#9E928A"/>
+  <path d="M62 130 Q54 155 60 172 Q68 172 74 145 Z" fill="#D6A7B2" opacity="0.6"/>
+  <path d="M165 100 Q200 130 190 180 Q172 185 160 135 Z" fill="#9E928A"/>
+  <path d="M178 130 Q186 155 180 172 Q172 172 166 145 Z" fill="#D6A7B2" opacity="0.6"/>
+
+  <!-- Bunny Body -->
+  <path d="M55 240 C55 160 80 145 120 145 C160 145 185 160 185 240 Z" fill="#BDB5B0"/>
+
+  <!-- Bunny Head -->
+  <circle cx="120" cy="115" r="42" fill="#CCC5C0"/>
+
+  <!-- Cheeks -->
+  <ellipse cx="106" cy="130" rx="16" ry="12" fill="#E6DFDC"/>
+  <ellipse cx="134" cy="130" rx="16" ry="12" fill="#E6DFDC"/>
+  <!-- Bunny Nose & Buck Teeth -->
+  <polygon points="120,124 116,120 124,120" fill="#E09CA8"/>
+  <rect x="117" y="128" width="3" height="7" rx="0.5" fill="#FFFFFF" stroke="#8C7060" stroke-width="0.8"/>
+  <rect x="120.5" y="128" width="3" height="7" rx="0.5" fill="#FFFFFF" stroke="#8C7060" stroke-width="0.8"/>
+
+  <!-- Innocent Brown Eyes -->
+  <circle cx="100" cy="106" r="9" fill="#3D291D"/>
+  <circle cx="140" cy="106" r="9" fill="#3D291D"/>
+  <circle cx="98" cy="103" r="3" fill="#FFFFFF"/>
+  <circle cx="138" cy="103" r="3" fill="#FFFFFF"/>
+
+  <!-- Severed iPhone Wire in Mouth (Evidence) -->
+  <path d="M100 136 Q115 132 120 132 Q130 132 145 142" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <circle cx="99" cy="136" r="2.5" fill="#C49A45"/>
+
+  <!-- Arrest Placard -->
+  <rect x="35" y="195" width="170" height="40" rx="4" fill="#120E16" stroke="#D4AF37" stroke-width="1.5"/>
+  <text x="120" y="212" fill="#F8F6F0" font-size="10" font-family="'JetBrains Mono', monospace" font-weight="bold" text-anchor="middle">PETTY PD #3309</text>
+  <text x="120" y="226" fill="#D4AF37" font-size="9" font-family="sans-serif" text-anchor="middle">SIR NIBBLESWORTH</text>
+</svg>
+

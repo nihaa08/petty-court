@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Mugshot background -->
+  <rect width="240" height="240" fill="#151722"/>
+  <line x1="0" y1="40" x2="240" y2="40" stroke="#2B2F45" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <line x1="0" y1="70" x2="240" y2="70" stroke="#2B2F45" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <line x1="0" y1="100" x2="240" y2="100" stroke="#2B2F45" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <line x1="0" y1="130" x2="240" y2="130" stroke="#2B2F45" stroke-width="1.5" stroke-dasharray="4 4"/>
+
+  <!-- Fluffy Cloud Body -->
+  <path d="M40 240 Q40 160 80 145 Q120 135 160 145 Q200 160 200 240 Z" fill="#E6EEF5"/>
+  <circle cx="65" cy="190" r="30" fill="#E6EEF5"/>
+  <circle cx="175" cy="190" r="30" fill="#E6EEF5"/>
+  <circle cx="120" cy="180" r="45" fill="#E6EEF5"/>
+
+  <!-- Ears (Ragdoll points) -->
+  <polygon points="75,95 55,42 95,68" fill="#5A4E5C"/>
+  <polygon points="165,95 185,42 145,68" fill="#5A4E5C"/>
+
+  <!-- Head -->
+  <circle cx="120" cy="115" r="46" fill="#F4F8FA"/>
+  <!-- Dark facial mask -->
+  <ellipse cx="120" cy="120" rx="30" ry="24" fill="#6B5E6D" opacity="0.6"/>
+
+  <!-- Piercing Sapphire Blue Eyes -->
+  <ellipse cx="102" cy="110" rx="10" ry="11" fill="#1E88E5"/>
+  <ellipse cx="138" cy="110" rx="10" ry="11" fill="#1E88E5"/>
+  <ellipse cx="102" cy="110" rx="4" ry="8" fill="#0D253A"/>
+  <ellipse cx="138" cy="110" rx="4" ry="8" fill="#0D253A"/>
+  <circle cx="99" cy="107" r="2.5" fill="#FFFFFF"/>
+  <circle cx="135" cy="107" r="2.5" fill="#FFFFFF"/>
+
+  <!-- Nose -->
+  <polygon points="120,126 116,122 124,122" fill="#D892A0"/>
+
+  <!-- Black cashmere coat beneath him that he shed all over! -->
+  <path d="M70 230 Q120 215 170 230 L180 240 L60 240 Z" fill="#1A181D"/>
+  <!-- White hairs stuck on coat -->
+  <line x1="85" y1="228" x2="100" y2="233" stroke="#FFFFFF" stroke-width="1.2"/>
+  <line x1="110" y1="225" x2="125" y2="230" stroke="#FFFFFF" stroke-width="1.2"/>
+  <line x1="135" y1="226" x2="155" y2="229" stroke="#FFFFFF" stroke-width="1.2"/>
+
+  <!-- Arrest Placard -->
+  <rect x="35" y="195" width="170" height="40" rx="4" fill="#0C0D14" stroke="#D4AF37" stroke-width="1.5"/>
+  <text x="120" y="212" fill="#F8F6F0" font-size="10" font-family="'JetBrains Mono', monospace" font-weight="bold" text-anchor="middle">PETTY PD #5582</text>
+  <text x="120" y="226" fill="#D4AF37" font-size="9" font-family="sans-serif" text-anchor="middle">DUKE FLUFFINGTON</text>
+</svg>
+

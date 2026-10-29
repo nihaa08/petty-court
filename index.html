@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Petty Court — Supreme Tribunal of Animal Misdemeanors</title>
+  <meta name="description" content="Where animals face justice for their ridiculous crimes! The official courtroom experience for domestic pet infractions, 3 AM zoomies, and food larceny.">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- =========================================================================
+       NAVIGATION BAR
+       ========================================================================= -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="#hero" class="brand-link" aria-label="Petty Court Home">
+        <img src="assets/seal.svg" alt="Petty Court Crest" class="brand-seal">
+        <div class="brand-text">
+          <span class="brand-name">PETTY COURT</span>
+          <span class="brand-sub">Supreme Tribunal • Est. 2026</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#gallery" class="nav-link">The Docket</a></li>
+          <li><a href="#courtroom" class="nav-link">Trial Bench</a></li>
+          <li><a href="#submit-case" class="nav-link">File Petition</a></li>
+          <li><a href="#hall-of-fame" class="nav-link">Hall of Fame</a></li>
+          <li><a href="#court-rules" class="nav-link">Penal Code</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="soundToggleBtn" class="sound-toggle-btn" aria-label="Toggle courtroom audio">
+          <span>🔊</span> Sound: ON
+        </button>
+        <a href="#submit-case" class="btn btn-primary btn-sm">
+          <span>+</span> File Case
+        </a>
+        <button id="mobileNavToggle" class="mobile-toggle" aria-label="Toggle navigation menu">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       HERO SECTION
+       ========================================================================= -->
+  <section class="hero-section" id="hero">
+    <div class="hero-glow-orb"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-crest-badge">
+          <img src="assets/seal.svg" alt="" class="badge-seal-mini">
+          <span class="badge-text">Official Supreme Tribunal of Animal Misdemeanors</span>
+        </div>
+
+        <h1 class="hero-title">
+          WELCOME TO
+          <span class="gilded-title">PETTY COURT</span>
+        </h1>
+
+        <!-- Preserved and Elevated Original Tagline -->
+        <p class="hero-tagline">
+          "Justice is blind. Cats are <span class="highlight-guilty">guilty</span>."
+        </p>
+
+        <p class="hero-subtext">
+          Where pets face supreme justice for calculated countertop defenestrations, 3 AM sprinting over human torsos, stolen socks, and unapologetic defiance of gravity.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#courtroom" class="btn btn-gavel-strike">
+            <span>⚖️</span> Step Before the Bench
+          </a>
+          <a href="#gallery" class="btn btn-secondary">
+            <span>🔍</span> Browse Active Docket
+          </a>
+          <a href="#submit-case" class="btn btn-secondary">
+            <span>📝</span> Report a Suspect
+          </a>
+        </div>
+
+        <!-- Real-Time Judicial Stats Bar -->
+        <div class="court-stats-bar">
+          <div class="stat-item">
+            <span class="stat-number">4,892</span>
+            <span class="stat-label">Cases Adjudicated</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">99.8%</span>
+            <span class="stat-label">Feline Conviction Rate</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">88.4%</span>
+            <span class="stat-label">Dogs Pled to 'Good Boy'</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">14,250</span>
+            <span class="stat-label">Treats Confiscated</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       ACTIVE DOCKET / GALLERY SECTION
+       ========================================================================= -->
+  <section class="section section-alt" id="gallery">
+    <div class="container">
+      <div class="section-header reveal-on-scroll">
+        <div class="section-eyebrow">
+          <span>🐾</span> Live Arraignments &amp; Defendants
+        </div>
+        <h2 class="section-title">
+          The Active <span class="gold-text">Petty Docket</span>
+        </h2>
+        <p class="section-desc">
+          Review high misdemeanors currently before the tribunal. Cast your vote on public jury sentiment or dispatch any suspect directly to the trial bench.
+        </p>
+      </div>
+
+      <!-- Controls: Filter Pills & Search -->
+      <div class="docket-controls reveal-on-scroll">
+        <div class="filter-pills">
+          <button class="filter-btn active" data-filter="all">All Defendants</button>
+          <button class="filter-btn" data-filter="feline">Felines 🐾</button>
+          <button class="filter-btn" data-filter="canine">Canines 🦴</button>
+          <button class="filter-btn" data-filter="avian">Birds &amp; Rodents 🦜</button>
+          <button class="filter-btn" data-filter="citizen">Citizen Filings 📝</button>
+        </div>
+
+        <div class="docket-search-row">
+          <span class="docket-search-icon">🔍</span>
+          <input type="text" id="docketSearchInput" class="docket-search-input" placeholder="Search suspect name, crime, or docket #...">
+        </div>
+      </div>
+
+      <!-- Dynamic Docket Grid -->
+      <div class="docket-grid reveal-on-scroll" id="docketGrid">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       INTERACTIVE COURTROOM BENCH
+       ========================================================================= -->
+  <section class="section" id="courtroom">
+    <div class="container">
+      <div class="section-header reveal-on-scroll">
+        <div class="section-eyebrow">
+          <span>🏛️</span> The Bench In Session
+        </div>
+        <h2 class="section-title">
+          The Interactive <span class="gold-text">Trial Chamber</span>
+        </h2>
+        <p class="section-desc">
+          Select your presiding magistrate, examine physical exhibits in the evidence locker, and strike the golden gavel to deliver a binding domestic sentence.
+        </p>
+      </div>
+
+      <div class="courtroom-stage reveal-on-scroll">
+        <!-- Judge Selector Bar -->
+        <div class="judge-selection-bar">
+          <div class="judge-bar-title">
+            <span>⚖️</span> Select Presiding Jurist
+          </div>
+          <div class="judges-grid" id="judgesGrid">
+            <!-- Rendered dynamically by app.js -->
+          </div>
+        </div>
+
+        <!-- Courtroom Bench Split Layout -->
+        <div class="bench-layout">
+          <!-- Left Column: Defendant on the Stand -->
+          <div class="defendant-stand-card">
+            <div class="stand-header">
+              <span class="stand-tag" id="standDocketTag">#PC-2026-9042</span>
+              <span style="font-family: var(--font-mono); font-size: 0.74rem; color: var(--gold-bright);">DEFENDANT BOX</span>
+            </div>
+
+            <div class="defendant-profile-row">
+              <div class="stand-mugshot-wrap">
+                <img id="standMugshotImg" class="stand-mugshot-img" src="assets/suspect-cat1.svg" alt="Defendant Stand Photo">
+              </div>
+              <div class="stand-profile-info">
+                <h3 class="stand-defendant-name" id="standDefendantName">Barnaby von Claws</h3>
+                <div class="stand-defendant-alias" id="standDefendantAlias">AKA "The 3 AM Poltergeist"</div>
+                <div class="stand-defendant-species" id="standDefendantSpecies">Species: British Shorthair Cat</div>
+              </div>
+            </div>
+
+            <!-- Evidence Locker Tabs -->
+            <div class="evidence-locker">
+              <div class="evidence-tabs-header">
+                <button class="evidence-tab-btn active" data-tab="A">Exhibit A</button>
+                <button class="evidence-tab-btn" data-tab="B">Witness Statement</button>
+                <button class="evidence-tab-btn" data-tab="C">Priors</button>
+              </div>
+              <div class="evidence-content-pane" id="evidenceContentPane">
+                <!-- Switched by app.js -->
+              </div>
+            </div>
+
+            <!-- Switch Case Dropdown -->
+            <div class="stand-case-switcher">
+              <label for="benchCaseSelect" style="font-family: var(--font-mono); font-size: 0.74rem; color: var(--text-muted); white-space: nowrap;">
+                Switch Docket:
+              </label>
+              <select id="benchCaseSelect" class="case-select-dropdown">
+                <!-- Populated dynamically -->
+              </select>
+            </div>
+          </div>
+
+          <!-- Right Column: Magistrate Podium & Gavel Station -->
+          <div class="magistrate-podium">
+            <!-- Active Presiding Judge Banner -->
+            <div class="presiding-judge-banner">
+              <img id="presidingJudgeAvatar" class="presiding-judge-avatar" src="assets/judge-cat.svg" alt="Presiding Judge">
+              <div class="presiding-judge-details">
+                <div class="presiding-name" id="presidingJudgeName">Chief Justice Barnaby Whiskers III</div>
+                <div class="presiding-credo" id="presidingJudgeCredo">"Guilty until proven catnip. Dogs have no standing in my court."</div>
+              </div>
+            </div>
+
+            <!-- Live Court Stenographer Ticker -->
+            <div class="stenographer-box">
+              <span class="stenographer-label">COURT STENOGRAPHER</span>
+              <p class="stenographer-text">
+                <span id="stenographerText">Court is called to order. All paws rise for the presiding magistrate.</span>
+                <span class="stenographer-cursor"></span>
+              </p>
+            </div>
+
+            <!-- Gavel Action Area -->
+            <div class="gavel-action-station">
+              <div class="gavel-visual-wrap" id="gavelVisual">
+                <img src="assets/gavel.svg" alt="Golden Court Gavel" style="width: 100%; height: 100%;">
+              </div>
+
+              <button id="gavelStrikeBtn" class="btn btn-gavel-strike" style="width: 100%; max-width: 380px;">
+                ORDER IN THE COURT — DELIVER VERDICT
+              </button>
+            </div>
+
+            <!-- Animated Verdict Reveal Stage -->
+            <div class="verdict-reveal-stage" id="verdictRevealStage">
+              <div class="verdict-stamp stamp-guilty" id="verdictStamp">GUILTY AS CHARGED</div>
+              <h4 class="verdict-title" id="verdictTitle">Official Ruling</h4>
+              <p class="verdict-decree-text" id="verdictDecreeText">Ruling summary will appear here.</p>
+
+              <div class="verdict-sentence-box">
+                <span class="sentence-label">Enforceable Domestic Penalty</span>
+                <p class="sentence-text" id="verdictSentenceText">Penalty text.</p>
+              </div>
+
+              <div class="verdict-action-row">
+                <button id="issueCertificateBtn" class="btn btn-primary btn-sm">
+                  📜 Issue Official Subpoena
+                </button>
+                <button id="trialNextBtn" class="btn btn-secondary btn-sm">
+                  🔄 Trial Next Defendant
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       FILE A PETIT PETITION FORM
+       ========================================================================= -->
+  <section class="section section-alt" id="submit-case">
+    <div class="container">
+      <div class="section-header reveal-on-scroll">
+        <div class="section-eyebrow">
+          <span>📜</span> Citizen Arrest &amp; Indictment
+        </div>
+        <h2 class="section-title">
+          Report a <span class="gold-text">Household Criminal</span>
+        </h2>
+        <p class="section-desc">
+          Have you or your clean laundry been victimized by an animal? File an official petition before the High Tribunal. Persisted instantly in your browser docket.
+        </p>
+      </div>
+
+      <div class="filing-desk-grid reveal-on-scroll">
+        <!-- Form Left Column -->
+        <div class="filing-form-card">
+          <form id="petitionForm">
+            <div class="form-group-grid">
+              <div class="form-group">
+                <label for="fieldName" class="form-label">
+                  Defendant Name <span class="required-star">*</span>
+                </label>
+                <input type="text" id="fieldName" class="form-input" placeholder="e.g. Mister Fluffington" required>
+              </div>
+              <div class="form-group">
+                <label for="fieldAlias" class="form-label">Street Alias / AKAs</label>
+                <input type="text" id="fieldAlias" class="form-input" placeholder="e.g. The Sock Bandit">
+              </div>
+            </div>
+
+            <div class="form-group-grid">
+              <div class="form-group">
+                <label for="fieldSpecies" class="form-label">Species &amp; Breed</label>
+                <input type="text" id="fieldSpecies" class="form-input" placeholder="e.g. Scottish Fold / Golden Retriever" value="Domestic Shorthair Cat">
+              </div>
+              <div class="form-group">
+                <label for="fieldCategory" class="form-label">Jurisdiction Bracket</label>
+                <select id="fieldCategory" class="form-select">
+                  <option value="feline">Feline Felonies (Cats)</option>
+                  <option value="canine">Canine Chaos (Dogs)</option>
+                  <option value="avian">Birds &amp; Rodents</option>
+                  <option value="other">Other Domestic Entities</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="fieldCrime" class="form-label">
+                Indictment / The Charge <span class="required-star">*</span>
+              </label>
+              <input type="text" id="fieldCrime" class="form-input" placeholder="e.g. Grand Larceny of Rotisserie Chicken" required>
+            </div>
+
+            <div class="form-group">
+              <label for="fieldStatement" class="form-label">
+                Victim Statement &amp; Narrative <span class="required-star">*</span>
+              </label>
+              <textarea id="fieldStatement" class="form-textarea" placeholder="Detail the exact sequence of events, including time of day and level of audacity..." required></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="fieldRestitution" class="form-label">Demanded Restitution</label>
+              <input type="text" id="fieldRestitution" class="form-input" placeholder="e.g. 5 minutes of compulsory head scratches &amp; apology meow">
+            </div>
+
+            <!-- Avatar Selection -->
+            <div class="form-group">
+              <label class="avatar-preset-label">Choose Suspect Mugshot</label>
+              <div class="avatar-presets-row">
+                <button type="button" class="avatar-preset-btn selected" data-img="assets/suspect-cat1.svg" title="Tuxedo Cat">
+                  <img src="assets/suspect-cat1.svg" alt="Tuxedo Cat">
+                </button>
+                <button type="button" class="avatar-preset-btn" data-img="assets/suspect-dog1.svg" title="Golden Retriever">
+                  <img src="assets/suspect-dog1.svg" alt="Golden Retriever">
+                </button>
+                <button type="button" class="avatar-preset-btn" data-img="assets/suspect-cats2.svg" title="Zoomie Cats">
+                  <img src="assets/suspect-cats2.svg" alt="Zoomie Duo">
+                </button>
+                <button type="button" class="avatar-preset-btn" data-img="assets/suspect-parrot1.svg" title="Parrot">
+                  <img src="assets/suspect-parrot1.svg" alt="Parrot">
+                </button>
+                <button type="button" class="avatar-preset-btn" data-img="assets/suspect-bunny1.svg" title="Bunny">
+                  <img src="assets/suspect-bunny1.svg" alt="Bunny">
+                </button>
+                <button type="button" class="avatar-preset-btn" data-img="assets/suspect-cat2.svg" title="Fluffy Ragdoll">
+                  <img src="assets/suspect-cat2.svg" alt="Ragdoll">
+                </button>
+              </div>
+              <input type="hidden" id="fieldAvatarUrl" value="assets/suspect-cat1.svg">
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              ⚖️ File Official Indictment
+            </button>
+          </form>
+        </div>
+
+        <!-- Live Warrant Preview Right Column -->
+        <div class="live-warrant-preview" id="liveWarrantPreview">
+          <div class="warrant-preview-header">
+            <h3 class="warrant-header-title">ARREST WARRANT</h3>
+            <div class="warrant-header-sub">High Tribunal of Petty Justice • Warrant Division</div>
+          </div>
+
+          <div class="warrant-preview-body">
+            <div class="warrant-mugshot-center">
+              <img id="prevMugshotImg" src="assets/suspect-cat1.svg" alt="Warrant Preview">
+            </div>
+
+            <div class="warrant-preview-item">
+              <span class="warrant-preview-label">DEFENDANT:</span>
+              <span class="warrant-preview-val" id="prevName">Lord Fluffington</span>
+            </div>
+
+            <div class="warrant-preview-item">
+              <span class="warrant-preview-label">KNOWN ALIAS:</span>
+              <span class="warrant-preview-val" id="prevAlias">"The Midnight Menace"</span>
+            </div>
+
+            <div class="warrant-preview-item">
+              <span class="warrant-preview-label">SPECIES:</span>
+              <span class="warrant-preview-val" id="prevSpecies">Cat (Domestic Short Hair)</span>
+            </div>
+
+            <div class="warrant-preview-item">
+              <span class="warrant-preview-label">ALLEGED MISDEMEANOR:</span>
+              <span class="warrant-preview-val" id="prevCrime">Aggravated Countertop Trespass</span>
+            </div>
+
+            <div class="warrant-preview-item">
+              <span class="warrant-preview-label">DEPOSITION SUMMARY:</span>
+              <span class="warrant-preview-val" id="prevStatement" style="font-weight: normal; font-size: 0.84rem;">
+                Stared directly into human soul and tipped over freshly filled water bowl.
+              </span>
+            </div>
+          </div>
+
+          <img src="assets/seal.svg" alt="" class="warrant-stamp-watermark">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       HALL OF PETTY FAME
+       ========================================================================= -->
+  <section class="section" id="hall-of-fame">
+    <div class="container">
+      <div class="section-header reveal-on-scroll">
+        <div class="section-eyebrow">
+          <span>🏆</span> Legendary Precedents
+        </div>
+        <h2 class="section-title">
+          The Hall of <span class="gold-text">Petty Fame</span>
+        </h2>
+        <p class="section-desc">
+          Honoring the most brazen, unrepentant, and historically chaotic domestic criminals. Grant royal pardons or double their historical sentences.
+        </p>
+      </div>
+
+      <div class="fame-grid reveal-on-scroll" id="hallOfFameGrid">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       OFFICIAL PETTY PENAL CODE ACCORDION
+       ========================================================================= -->
+  <section class="section section-alt" id="court-rules">
+    <div class="container">
+      <div class="section-header reveal-on-scroll">
+        <div class="section-eyebrow">
+          <span>⚖️</span> Domestic Jurisprudence
+        </div>
+        <h2 class="section-title">
+          The Petty <span class="gold-text">Penal Code</span>
+        </h2>
+        <p class="section-desc">
+          The foundational bylaws established by the High Council of Household Animals. Ignorance of the code is no excuse for human complainants.
+        </p>
+      </div>
+
+      <div class="penal-code-list reveal-on-scroll">
+        <div class="bylaw-item open">
+          <button class="bylaw-trigger">
+            <div>
+              <span class="bylaw-section-code">§ 101.4</span>
+              The "If I Fits, I Sits" Absolute Immunity Clause
+            </div>
+            <span class="bylaw-arrow">▼</span>
+          </button>
+          <div class="bylaw-body">
+            Any container, box, laundry basket, or sink basin whose physical volume can accommodate at least 70% of a feline torso is legally deemed designated sleeping territory. Claims of "clean laundry" or "that is my handbag" are dismissed without prejudice.
+          </div>
+        </div>
+
+        <div class="bylaw-item">
+          <button class="bylaw-trigger">
+            <div>
+              <span class="bylaw-section-code">§ 202.1</span>
+              The 03:00 AM Nocturnal Sprinting Mandate
+            </div>
+            <span class="bylaw-arrow">▼</span>
+          </button>
+          <div class="bylaw-body">
+            Household animals retain full sovereign rights to reach terminal velocity across sleeping human faces between the hours of 03:00 and 04:30 AM. Said velocity is recognized as vital spiritual defense against invisible hallway entities.
+          </div>
+        </div>
+
+        <div class="bylaw-item">
+          <button class="bylaw-trigger">
+            <div>
+              <span class="bylaw-section-code">§ 312.8</span>
+              The Unattended Sandwich Maritime Law
+            </div>
+            <span class="bylaw-arrow">▼</span>
+          </button>
+          <div class="bylaw-body">
+            Any turkey, roast beef, or cheese sandwich left unattended on a counter or coffee table for longer than 4.5 seconds is officially designated derelict maritime salvage. Canines may expropriate the asset without warrant.
+          </div>
+        </div>
+
+        <div class="bylaw-item">
+          <button class="bylaw-trigger">
+            <div>
+              <span class="bylaw-section-code">§ 415.2</span>
+              Cardboard Box Occupancy Supremacy
+            </div>
+            <span class="bylaw-arrow">▼</span>
+          </button>
+          <div class="bylaw-body">
+            Regardless of monetary value spent on an orthopedic velvet cat bed ($120+), the corrugated Amazon shipping box in which it arrived holds supreme judicial occupancy preference. Humans who discard the box commit high contempt.
+          </div>
+        </div>
+
+        <div class="bylaw-item">
+          <button class="bylaw-trigger">
+            <div>
+              <span class="bylaw-section-code">§ 519.7</span>
+              The Void Stare Psychological Exemption
+            </div>
+            <span class="bylaw-arrow">▼</span>
+          </button>
+          <div class="bylaw-body">
+            Staring motionlessly at a blank white wall or dark hallway ceiling for 22 consecutive minutes while human attempts to sleep is considered standard spiritual vigilance and cannot be prosecuted under harassment statutes.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       OFFICIAL PRINTABLE CERTIFICATE MODAL
+       ========================================================================= -->
+  <div class="modal-overlay" id="certModalOverlay" role="dialog" aria-modal="true" aria-labelledby="certCourtTitle">
+    <div class="certificate-modal-box">
+      <button class="modal-close-btn" id="certModalClose" aria-label="Close certificate">×</button>
+
+      <div class="cert-border-ornament cert-tl"></div>
+      <div class="cert-border-ornament cert-tr"></div>
+      <div class="cert-border-ornament cert-bl"></div>
+      <div class="cert-border-ornament cert-br"></div>
+
+      <div class="cert-header">
+        <img src="assets/seal.svg" alt="Court Seal" class="cert-seal-img">
+        <h3 class="cert-court-title" id="certCourtTitle">Supreme Tribunal of Petty Disputes</h3>
+        <div class="cert-doc-type">Official Writ of Domestic Reprimand</div>
+      </div>
+
+      <div class="cert-body-prose">
+        Be it hereby decreed before the household, that the animal known legally as
+        <strong id="certDefendantName">Barnaby von Claws</strong>
+        has stood before the bench and has been conclusively adjudicated for the charge of
+        <strong id="certCharge">Aggravated Water Glass Defenestration</strong>.
+        The presiding magistrate hereby orders full submission to the prescribed restitution.
+      </div>
+
+      <div class="cert-footer-row">
+        <div class="cert-sign-col">
+          <div class="cert-signature-line" id="certJudgeSignature">B. Whiskers</div>
+          <div class="cert-sign-label" id="certJudgeName">Chief Justice Barnaby Whiskers III</div>
+        </div>
+
+        <div class="cert-sign-col">
+          <div style="font-family: var(--font-mono); font-size: 0.88rem; color: #171104; font-weight: 700;" id="certDate">October 29, 2026</div>
+          <div class="cert-sign-label">Date of Official Adjudication</div>
+        </div>
+      </div>
+
+      <div class="cert-modal-actions">
+        <button id="certPrintBtn" class="btn btn-primary btn-sm">
+          🖨️ Print Warrant (Certificate)
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <a href="#hero" class="brand-link" style="margin-bottom: 0.8rem;">
+            <img src="assets/seal.svg" alt="Petty Court Seal" class="brand-seal">
+            <span class="brand-name">PETTY COURT</span>
+          </a>
+          <p>
+            The world's foremost judicial tribunal adjudicating high misdemeanors, calculated property destruction, and 3 AM zoomies in domestic fauna.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Tribunal Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#hero" class="footer-nav-link">Courtroom Entrance</a></li>
+            <li><a href="#gallery" class="footer-nav-link">Active Petty Docket</a></li>
+            <li><a href="#courtroom" class="footer-nav-link">The Bench &amp; Judges</a></li>
+            <li><a href="#submit-case" class="footer-nav-link">File a Petit Petition</a></li>
+            <li><a href="#hall-of-fame" class="footer-nav-link">Hall of Petty Fame</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Legal &amp; Privacy</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#court-rules" class="footer-nav-link">Petty Penal Code</a></li>
+            <li><span class="footer-privacy-pill">✓ Privacy-First • 100% Local Storage</span></li>
+            <li style="margin-top: 0.8rem; font-size: 0.8rem; color: var(--text-muted);">
+              No treats were confiscated in real life. All animal defendants were rewarded with snacks.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>
+          © 2026 Petty Court Supreme Tribunal. All domestic rights reserved.
+        </div>
+        <div style="color: var(--text-muted); font-size: 0.78rem;">
+          Preserving: "Justice is blind. Cats are guilty."
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- COURT TOAST NOTIFICATION -->
+  <div id="courtToast" class="court-toast" aria-live="polite"></div>
+
+  <!-- SCRIPT -->
+  <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Mugshot background -->
+  <rect width="240" height="240" fill="#141E24"/>
+  <line x1="0" y1="40" x2="240" y2="40" stroke="#233540" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <line x1="0" y1="70" x2="240" y2="70" stroke="#233540" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <line x1="0" y1="100" x2="240" y2="100" stroke="#233540" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <line x1="0" y1="130" x2="240" y2="130" stroke="#233540" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <line x1="0" y1="160" x2="240" y2="160" stroke="#233540" stroke-width="1.5" stroke-dasharray="4 4"/>
+
+  <!-- Crest Feathers -->
+  <path d="M120 70 Q145 20 160 30 Q140 55 125 75 Z" fill="#FF5722"/>
+  <path d="M115 72 Q130 30 145 40 Q130 65 120 78 Z" fill="#FFC107"/>
+  <path d="M110 75 Q115 40 128 50 Q120 70 115 80 Z" fill="#4CAF50"/>
+
+  <!-- Parrot Body -->
+  <path d="M60 240 C60 165 85 140 120 140 C155 140 180 165 180 240 Z" fill="#2E7D32"/>
+  <path d="M90 160 C90 140 120 140 120 200 C100 200 90 180 90 160 Z" fill="#E64A19"/>
+
+  <!-- Parrot Head -->
+  <circle cx="120" cy="110" r="40" fill="#388E3C"/>
+  <ellipse cx="108" cy="108" rx="22" ry="18" fill="#FFF9C4"/>
+
+  <!-- Beak -->
+  <path d="M120 100 Q148 100 152 125 Q135 140 120 130 Z" fill="#37474F"/>
+  <path d="M120 122 Q135 126 142 124 L120 130 Z" fill="#263238"/>
+
+  <!-- Intense Eye -->
+  <circle cx="106" cy="106" r="7" fill="#FFD54F"/>
+  <circle cx="106" cy="106" r="3.5" fill="#111111"/>
+  <circle cx="104.5" cy="104.5" r="1.5" fill="#FFFFFF"/>
+
+  <!-- Arrest Placard -->
+  <rect x="35" y="195" width="170" height="40" rx="4" fill="#0A1014" stroke="#D4AF37" stroke-width="1.5"/>
+  <text x="120" y="212" fill="#F8F6F0" font-size="10" font-family="'JetBrains Mono', monospace" font-weight="bold" text-anchor="middle">PETTY PD #7801</text>
+  <text x="120" y="226" fill="#D4AF37" font-size="9" font-family="sans-serif" text-anchor="middle">CAPTAIN BEAKS</text>
+</svg>
+

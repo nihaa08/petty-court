@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100%" height="100%">
+  <defs>
+    <linearGradient id="goldHead" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF4B8" />
+      <stop offset="40%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#8C6A15" />
+    </linearGradient>
+    <linearGradient id="woodHead" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6F3B20" />
+      <stop offset="45%" stop-color="#462211" />
+      <stop offset="100%" stop-color="#241007" />
+    </linearGradient>
+  </defs>
+  <!-- Sounding Block Base -->
+  <ellipse cx="60" cy="102" rx="44" ry="12" fill="#0C0A08" stroke="url(#goldHead)" stroke-width="1.5"/>
+  <ellipse cx="60" cy="98" rx="40" ry="10" fill="url(#woodHead)" stroke="#6F3B20" stroke-width="1"/>
+  <ellipse cx="60" cy="98" rx="28" ry="6" fill="#1C0E07" opacity="0.6"/>
+
+  <!-- Angled Gavel -->
+  <g transform="translate(60, 46) rotate(-32)">
+    <!-- Handle -->
+    <rect x="-4.5" y="2" width="9" height="66" rx="4.5" fill="url(#woodHead)" stroke="url(#goldHead)" stroke-width="1.2"/>
+    <rect x="-5.5" y="52" width="11" height="14" rx="3" fill="url(#goldHead)"/>
+    <!-- Head Body -->
+    <rect x="-28" y="-14" width="56" height="24" rx="5" fill="url(#woodHead)" stroke="url(#goldHead)" stroke-width="1.8"/>
+    <!-- Brass Rings on Head -->
+    <rect x="-10" y="-14" width="5" height="24" fill="url(#goldHead)"/>
+    <rect x="5" y="-14" width="5" height="24" fill="url(#goldHead)"/>
+    <!-- Metal Caps -->
+    <rect x="-30" y="-16.5" width="4" height="29" rx="2" fill="url(#goldHead)"/>
+    <rect x="26" y="-16.5" width="4" height="29" rx="2" fill="url(#goldHead)"/>
+  </g>
+</svg>
+

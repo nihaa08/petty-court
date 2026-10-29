@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgDog" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#2D2845" />
+      <stop offset="100%" stop-color="#0F0C1B" />
+    </radialGradient>
+    <linearGradient id="goldD" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF2B8" />
+      <stop offset="50%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#8C6A15" />
+    </linearGradient>
+    <linearGradient id="furGold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F2BA52" />
+      <stop offset="50%" stop-color="#DDA135" />
+      <stop offset="100%" stop-color="#B87C1E" />
+    </linearGradient>
+  </defs>
+  <!-- Background circle with gold rim -->
+  <circle cx="120" cy="120" r="115" fill="url(#bgDog)" stroke="url(#goldD)" stroke-width="3"/>
+  <circle cx="120" cy="120" r="108" fill="none" stroke="url(#goldD)" stroke-width="0.8" stroke-dasharray="2 2"/>
+
+  <!-- Robe -->
+  <path d="M40 220 Q120 185 200 220 L210 240 L30 240 Z" fill="#141720" stroke="#222838" stroke-width="2"/>
+  <!-- Judicial Collar -->
+  <path d="M100 185 L140 185 L132 220 L120 226 L108 220 Z" fill="#F8F6F0" stroke="#DDD6C6" stroke-width="1.5"/>
+  <circle cx="120" cy="192" r="4" fill="url(#goldD)"/>
+
+  <!-- Powdered Wig Rolls -->
+  <g fill="#EAECEF" stroke="#CBD0D8" stroke-width="1">
+    <ellipse cx="65" cy="115" rx="16" ry="25"/>
+    <ellipse cx="60" cy="145" rx="15" ry="25"/>
+    <ellipse cx="62" cy="172" rx="13" ry="18"/>
+    <ellipse cx="175" cy="115" rx="16" ry="25"/>
+    <ellipse cx="180" cy="145" rx="15" ry="25"/>
+    <ellipse cx="178" cy="172" rx="13" ry="18"/>
+    <!-- Wig crest -->
+    <path d="M75 75 Q120 45 165 75 Q175 95 160 110 Q120 85 80 110 Q65 95 75 75 Z" fill="#F0F2F5"/>
+    <circle cx="95" cy="70" r="12" fill="#E2E5E9"/>
+    <circle cx="120" cy="65" r="13" fill="#EAECEF"/>
+    <circle cx="145" cy="70" r="12" fill="#E2E5E9"/>
+  </g>
+
+  <!-- Golden Retriever Floppy Ears behind wig -->
+  <path d="M72 100 Q50 140 68 165 Q78 150 78 120 Z" fill="#BF8120"/>
+  <path d="M168 100 Q190 140 172 165 Q162 150 162 120 Z" fill="#BF8120"/>
+
+  <!-- Dog Head -->
+  <ellipse cx="120" cy="130" rx="42" ry="40" fill="url(#furGold)"/>
+  
+  <!-- Snout / Muzzle -->
+  <ellipse cx="120" cy="154" rx="25" ry="20" fill="#F6C978"/>
+  <polygon points="120,146 110,138 130,138" fill="#1A1510" rx="4"/>
+  <path d="M120 146 L120 156 Q112 162 106 158 M120 156 Q128 162 134 158" fill="none" stroke="#2B1A0A" stroke-width="2.2" stroke-linecap="round"/>
+  <!-- Happy tongue peeking out (easily bribed with bacon) -->
+  <path d="M116 158 C116 168 124 168 124 158 Z" fill="#F77189"/>
+
+  <!-- Eyes (Big earnest, loving, unbothered dog eyes) -->
+  <ellipse cx="102" cy="120" rx="9" ry="10" fill="#2E1C0C"/>
+  <ellipse cx="138" cy="120" rx="9" ry="10" fill="#2E1C0C"/>
+  <circle cx="100" cy="117" r="3" fill="#FFFFFF"/>
+  <circle cx="104" cy="122" r="1.5" fill="#FFFFFF"/>
+  <circle cx="136" cy="117" r="3" fill="#FFFFFF"/>
+  <circle cx="140" cy="122" r="1.5" fill="#FFFFFF"/>
+
+  <!-- Half-moon reading glasses perched on snout -->
+  <path d="M92 128 Q102 136 112 128 L114 128 L126 128 L128 128 Q138 136 148 128" fill="none" stroke="url(#goldD)" stroke-width="2"/>
+  <ellipse cx="102" cy="128" rx="10" ry="6" fill="rgba(243,229,171,0.2)" stroke="url(#goldD)" stroke-width="1.5"/>
+  <ellipse cx="138" cy="128" rx="10" ry="6" fill="rgba(243,229,171,0.2)" stroke="url(#goldD)" stroke-width="1.5"/>
+</svg>
+
